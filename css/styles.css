@@ -12,7 +12,13 @@ body {
   --back-ground-color: F4F4FD;
   --hover-focus: #404bbf;
 }
-
+.container-heder{
+  width: 1440px;
+height: 72px;
+display: flex;
+flex-direction: row;
+flex-shrink: 0;
+}
 li {
   list-style-type: none;
 }
