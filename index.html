@@ -23,18 +23,18 @@
 
   <body>
     <!-- heder -->
-    <header>
-      <div class="container-heder">
-      <nav>
+    <header class="top">
+      <div class="container">
+      <nav class="header-navigation">
         <a class="header-logo" href="id"> Web<span>Studio</span></a>
-        <ul>
+        <ul class="header-menu">
           <li><a class="link-studia" href="/">Studio</a></li>
           <li><a class="link-studia" href="">Portfolio</a></li>
           <li><a class="link-studia" href="">Contacts</a></li>
         </ul>
       </nav>
       <address class="contacts">
-        <ul>
+        <ul class="address">
           <li>
             <a class="heder-email" href="mailto:info@devstudio.com">
               info@devstudio.com</a
@@ -58,32 +58,32 @@
       </section>
     </div>
       <!-- advantages -->
-      <section>
-        <div class="container">
-        <h2 hidden>Our Advantages</h2>
+      <section class="advantage-section">
+        <div class="container-section1">
+        <h2 class="visually-hidden">Our Advantages</h2>
         <ul class="advantages">
-          <li>
+          <li class="advantages-li">
             <h3 class="advantages-title">Strategy</h3>
             <p class="advantage-text">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="advantages-li">
             <h3 class="advantages-title">Punctuality</h3>
             <p class="advantage-text">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="advantages-li">
             <h3 class="advantages-title">Diligence</h3>
             <p class="advantage-text">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="advantages-li">
             <h3 class="advantages-title">Technologies</h3>
             <p class="advantage-text">
               Design practice focused on digital experiences. We bring forth a
@@ -97,15 +97,17 @@
       <section class="team">
         <div class="container">
         <h2 class="team-title">Our Team</h2>
-        <ul>
+        <ul class="our-team-list">
           <li class="our-team">
             <img
               src="./images/img.jpg"
               alt="Photo of a man with a beard what smiling"
               width="264"
             />
-            <h3 class="advantages-title">Mark Guerrero</h3>
-            <p class="advantage-text">Product Designer</p>
+            <div class="pesonal-name">
+            <h3 class="team-list-title">Mark Guerrero</h3>
+            <p class="team-text">Product Designer</p>
+          </div>
           </li>
           <li class="our-team">
             <img
@@ -113,13 +115,17 @@
               alt="Photo of a man smiling"
               width="264"
             />
-            <h3 class="advantages-title">Tom Ford</h3>
-            <p class="advantage-text">Frontend Developer</p>
+            <div class="pesonal-name">
+            <h3 class="team-list-title">Tom Ford</h3>
+            <p class="team-text">Frontend Developer</p>
+          </div>
           </li>
           <li class="our-team">
             <img src="./images/img(2).jpg" alt="photo of woman" width="264" />
-            <h3 class="advantages-title">Camila Garcia</h3>
-            <p class="advantage-text">Marketing</p>
+            <div class="pesonal-name">
+            <h3 class="team-list-title">Camila Garcia</h3>
+            <p class="team-text">Marketing</p>
+          </div>
           </li>
           <li class="our-team">
             <img
@@ -127,8 +133,10 @@
               alt="Photo of a man with a beard what smiling"
               width="264"
             />
-            <h3 class="advantages-title">Daniel Wilson</h3>
-            <p class="advantage-text">UI Designer</p>
+            <div class="pesonal-name">
+            <h3 class="team-list-title">Daniel Wilson</h3>
+            <p class="team-text">UI Designer</p>
+          </div>
           </li>
         </ul>
       </div>
@@ -136,21 +144,22 @@
       <section class="portfolio">
         <div class="container">
         <h2 class="team-title">Our Portfolio</h2>
-        <ul class="advantages">
-          <li>
+        <ul class="portfolio-list">
+          <li class="portfolio-li">
+            <div class="list-container"></div>
             <img src="./images/asdasdas.jpg" alt="app" width="360" />
-            <h3 class="advantages-title">Banking App</h3>
-            <p class="advantage-text">App</p>
+            <h3 class="team-list-title">Banking App</h3>
+            <p class="team-text">App</p>
           </li>
           <li>
             <img src="./images/smarphone.jpg" alt="phone-with-qrcode" width="360" />
-            <h3 class="advantages-title">Cashless Payment</h3>
-            <p class="advantage-text">Marketing</p>
+            <h3 class="team-list-title">Cashless Payment</h3>
+            <p class="team-text">Marketing</p>
           </li>
           <li>
             <img src="./images/2.jpg" alt="laptop-telefon" width="360" />
-            <h3 class="advantages-title">Meditation App</h3>
-            <p class="advantage-text">App</p>
+            <h3 class="team-list-title">Meditation App</h3>
+            <p class="team-text">App</p>
           </li>
           <li>
             <img
@@ -158,19 +167,19 @@
               alt="man in car with telffon"
               width="360"
             />
-            <h3 class="advantages-title">Taxi Service</h3>
-            <p class="advantage-text">Marketing</p>
+            <h3 class="team-list-title">Taxi Service</h3>
+            <p class="team-text">Marketing</p>
           </li>
           <li>
             <img src="./images/4.jpg" alt="smartfone with tehms" width="360" />
-            <h3 class="advantages-title">Screen Illustrations</h3>
-            <p class="advantage-text">Design</p>
+            <h3 class="team-list-title">Screen Illustrations</h3>
+            <p class="team-text">Design</p>
           </li>
 
           <li>
             <img src="./images/5.jpg" alt="woman" width="360" />
-            <h3 class="advantages-title">Online Courses</h3>
-            <p class="advantage-text">Marketing</p>
+            <h3 class="team-list-title">Online Courses</h3>
+            <p class="team-text">Marketing</p>
           </li>
         </ul>
       </div>
