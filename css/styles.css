@@ -179,7 +179,7 @@ img {
   gap: 24px;
 }
 .advantages-li {
-  width: calc((100%-72px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .advantages-title {
   font-weight: 500;
@@ -226,7 +226,7 @@ img {
 }
 .our-team {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc(100% - 3 * 24px);
   border-radius: 0px 0px 4px 4px;
 }
 .pesonal-name {
