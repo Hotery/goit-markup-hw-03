@@ -52,7 +52,10 @@ img{
   font-size: 18px;
   line-height: 1.17;
 }
-
+  .container{
+    display: flex;
+    width:  1440px;
+  }
 .link-studia {
   font-size: 16px;
   color: #2e2f42;
@@ -85,6 +88,7 @@ img{
 .address {
   display: flex;
   gap: 40px;
+  justify-content: end;
 }
 
 .link-studia:hover,
