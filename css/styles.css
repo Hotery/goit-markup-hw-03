@@ -12,6 +12,15 @@ body {
   --back-ground-color: F4F4FD;
   --hover-focus: #404bbf;
 }
+main {
+  flex-grow: 1;
+}
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 li {
   list-style-type: none;
 }
@@ -21,6 +30,8 @@ a {
 
 p {
   color: var(--main--text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 h1,
 h2,
@@ -32,6 +43,7 @@ h6 {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 
 /* heder */
@@ -53,10 +65,16 @@ img {
   line-height: 1.17;
 }
 .container {
-  display: flex;
-  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-  padding: 0 15px;
+  width: 1158px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.header-container{
+  display: flex;
 }
 .link-studia {
   font-size: 16px;
@@ -70,17 +88,12 @@ img {
 }
 .top {
   border-bottom: 1px solid #e7e9fc;
-}
-.container-header {
-  width: 1158px;
-  height: 72px;
-  display: flex;
-  margin: 0 auto;
-  padding: 0 15px;
+  color: var(--text-color);
 }
 .header-navigation {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 .header-menu {
   display: flex;
@@ -90,7 +103,6 @@ img {
 .address {
   display: flex;
   gap: 40px;
-  justify-content: end;
 }
 
 .link-studia:hover,
@@ -98,17 +110,19 @@ img {
   color: #404bbf;
 }
 .contacts {
-  font-style: normal;
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .heder-email {
   font-size: 16px;
   color: #434455;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-size: 16px;
+  padding: 24px 0;
 }
 
 .heder-email:hover,
@@ -120,20 +134,28 @@ img {
 
 .hero {
   background-color: #2e2f42;
-  width: 1440px;
-  height: 600px;
+ min-width: 1440px;
+  min-height: 600px;
   flex-shrink: 0;
   flex-direction: column;
   padding: 188px 0;
 }
+ .container{
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 1158px;
+ }
 .hero-title {
   color: #ffffff;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   max-width: 496px;
-  margin-left: 472px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 120px;
 }
 
 .hero-button {
@@ -150,6 +172,7 @@ img {
   min-width: 169px;
   height: 56px;
   border-radius: 4px;
+  margin: auto auto;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -251,12 +274,13 @@ img {
   padding: 120px 0;
 }
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
-.portfolio-list .portfolio-li{
+.portfolio-li{
+  display: flex;
+  gap: 48px 32px;
   width: calc((100% - 48px) / 3);
 }
 .app-conteiner {
