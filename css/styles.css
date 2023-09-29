@@ -173,6 +173,7 @@ img {
   height: 56px;
   border-radius: 4px;
   margin: auto auto;
+  padding: 16px 32px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -200,6 +201,9 @@ img {
   background-color: #ffffff;
   display: flex;
   gap: 24px;
+}
+.container.advantages-container {
+  margin: 0 auto;
 }
 .advantages-li {
   width: calc((100% - 72px) / 4);
@@ -233,6 +237,11 @@ img {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
+.container .section-team-container{
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-shrink: 0;
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -245,12 +254,14 @@ img {
 .our-team-list {
   display: flex;
   gap: 24px;
-  flex-basis: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
-  background-color: #ffffff;
 }
 .our-team {
   flex-basis: calc(100% - 3 * 24px);
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .pesonal-name {
   padding: 32px 0;
@@ -274,19 +285,19 @@ img {
   padding: 120px 0;
 }
 .portfolio-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.portfolio-li{
   display: flex;
-  gap: 48px 32px;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px
+}
+.portfolio-li{  
   width: calc((100% - 48px) / 3);
 }
 .app-conteiner {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  width: 360px;
 }
 .list-container {
   padding: 32px 16px;
@@ -294,6 +305,7 @@ img {
   border-top: none;
 }
 .portfolio h2 {
+  color: var(--text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -308,24 +320,34 @@ img {
   background-color: #2e2f42;
   padding: 100px 0;
 }
+  .container .footer-container {
+    padding-left: 15px;
+  flex-shrink: 0;
+  }
 .footer-logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-decoration: none;
   display: inline-block;
   margin-bottom: 16px;
 }
+
 .footer-span {
   color: #f4f4fd;
 }
 .footer-text {
+  color:  #f4f4fd;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
-  color: #f4f4fd;
   letter-spacing: 0.02em;
+  text-decoration: none;
+  width: 264px;
 }
 .address {
   color: #ffffff;
