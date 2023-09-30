@@ -30,8 +30,7 @@ a {
 
 p {
   color: var(--main--text-color);
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 h1,
 h2,
@@ -40,6 +39,7 @@ h4,
 h5,
 h6 {
   color: var(--text-color);
+  margin: 0;
 }
 img {
   display: block;
@@ -73,7 +73,7 @@ img {
   align-items: center;
   flex-shrink: 0;
 }
-.header-container{
+.header-container {
   display: flex;
 }
 .link-studia {
@@ -118,7 +118,6 @@ img {
 .heder-email {
   font-size: 16px;
   color: #434455;
-  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-size: 16px;
@@ -134,17 +133,17 @@ img {
 
 .hero {
   background-color: #2e2f42;
- min-width: 1440px;
+  min-width: 1440px;
   min-height: 600px;
   flex-shrink: 0;
   flex-direction: column;
   padding: 188px 0;
 }
- .container{
+.container {
   padding: 0 15px;
   margin: 0 auto;
   width: 1158px;
- }
+}
 .hero-title {
   color: #ffffff;
   font-weight: 700;
@@ -155,7 +154,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  height: 120px;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -237,7 +236,7 @@ img {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
-.container .section-team-container{
+.container .section-team-container {
   padding-left: 15px;
   padding-right: 15px;
   flex-shrink: 0;
@@ -272,7 +271,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  text-align: center;
 }
 .team-text {
   font-size: 16px;
@@ -280,17 +278,23 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
 }
+
 .portfolio {
   background: #fff;
   padding: 120px 0;
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
-  row-gap: 48px
+  row-gap: 48px;
 }
-.portfolio-li{  
+.portfolio-li {
   width: calc((100% - 48px) / 3);
 }
 .app-conteiner {
@@ -311,7 +315,7 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 /* footer */
@@ -320,10 +324,10 @@ img {
   background-color: #2e2f42;
   padding: 100px 0;
 }
-  .container .footer-container {
-    padding-left: 15px;
+.container .footer-container {
+  padding-left: 15px;
   flex-shrink: 0;
-  }
+}
 .footer-logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -341,7 +345,7 @@ img {
   color: #f4f4fd;
 }
 .footer-text {
-  color:  #f4f4fd;
+  color: #f4f4fd;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
